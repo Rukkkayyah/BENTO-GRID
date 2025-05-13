@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DM-SANS-400: "DM-sans";
+    --DM-SANS-500: "DM-sans";
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+@media (max-width: 1440px) {
+
+    .Bento-grid {
+        background-color: var(--White);
+        font-family: "DM-sans", sans-serif;
+        display: grid;
+        justify-content: center;
+        padding: 2rem 2.65rem;
+        margin: 3rem 2rem;
+
+    }
+
+    .Bento-grid .item {
+        max-width: 1440px;
+        margin: 2rem;
+        display: grid;
+        grid-template-areas:
+            "item1 item2 item2 item3"
+            "item4 item5 item6 item3"
+            "item4 item7 item8 item8";
+        grid-auto-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.item1 {
+    grid-area: item1;
+    background-color: var(--Yellow-100);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item1 .quote {
+    font-size: 30px;
+    align-items: center;
+    padding: 2rem;
+}
+
+.quick {
+    color: var(--Purple-500);
+    padding-right: 2rem;
+    font-style: italic;
+}
+
+
+.item1 .image {
+    margin: auto;
+    width: 150px;
+    padding-bottom: 2rem;
+    margin-top: 0;
+
+}
+
+.item2 {
+    grid-area: item2;
+    background-color: var(--Purple-500);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.item2 .quote {
+    color: var(--White);
+    /* align-items: center; */
+    text-align: center;
+    padding-top: 3rem;
+    font-family: var(--DM-SANS-500);
+
+}
+
+.item2 .image {
+    width: 350px;
+    padding-left: 11rem;
+    /* text-align: center; */
+    padding-top: 1rem;
+}
+
+.bottom-quote {
+    color: aliceblue;
+    text-align: center;
+}
+
+.item3 {
+    grid-area: item3;
+    background-color: var(--Purple-100);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    /* justify-content: space-between; */
+}
+
+.item3 .quote {
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+.item3 .image {
+    padding: 6rem 0;
+    padding-left: 1rem;
+
+}
+
+.item3 .bottom-quote2 {
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.item4 {
+    grid-area: item4;
+    background-color: var(--Yellow-500);
+    border-radius: .7rem;
+
+}
+
+.item4 .quote {
+    /* text-align: center; */
+    padding: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.item4 .image {
+    margin-top: auto;
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+
+.item5 {
+    grid-area: item5;
+    background-color: var(--White);
+    border-radius: .5rem;
+}
+
+
+
+.item5 .quote {
+    font-size: 2rem;
+}
+
+.item6 {
+    grid-area: item6;
+    background-color: var(--Yellow-500);
+    border-radius: .5rem;
+}
+
+
+
+.item6 .quote {
+    font-size: 1.7rem;
+    padding: 20px;
+}
+
+
+.item7 {
+    grid-area: item7;
+    background-color: var(--White);
+    border-radius: .5rem;
+}
+
+
+span {
+    font-size: 3rem;
+    display: block;
+}
+
+.item8 {
+    display: flex;
+    grid-area: item8;
+    background-color: var(--Purple-500);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.item8 .quote {
+    padding: 10px;
+}
+
+
+@media (max-width: 375px) {
+    .Bento-grid .item {
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+            "item1 " "item2 " "item3" "item4" "item4" "item5"
+            "item6" "item7" "item8";
+        grid-auto-columns: 1fr;
+        gap: 2rem;
+    }
+}
