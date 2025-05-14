@@ -8,8 +8,9 @@
 }
 
 :root {
-    --DM-SANS-400: "DM-sans";
-    --DM-SANS-500: "DM-sans";
+    --DM-SANS-400: "DMsans medium";
+    --DM-SANS-500: "DMsans mediumitalic";
+    --DM-SANS-1: "DMsans regular";
     --Purple-100: hsl(254, 88%, 90%);
     --Purple-500: hsl(256, 67%, 59%);
     --Yellow-100: hsl(31, 66%, 93%);
@@ -53,6 +54,7 @@ img {
 
 .item1 {
     grid-area: item1;
+    font-family: var(--DM-SANS);
     background-color: var(--Yellow-100);
     border-radius: 1rem;
     display: flex;
@@ -83,6 +85,7 @@ img {
 
 .item2 {
     grid-area: item2;
+    font-family: var(--DM-SANS-500);
     background-color: var(--Purple-500);
     border-radius: 1rem;
     display: flex;
@@ -197,12 +200,14 @@ span {
 .item8 {
     display: flex;
     grid-area: item8;
+    font-family: var(--DM-SANS);
     background-color: var(--Purple-500);
     border-radius: .5rem;
     padding: 2rem;
 }
 
 .item8 .quote {
+    color: var(--White);
     padding: 10px;
 }
 
