@@ -85,7 +85,7 @@ img {
 
 .item2 {
     grid-area: item2;
-    font-family: var(--DM-SANS-500);
+    font-family: var(--DM-SANS);
     background-color: var(--Purple-500);
     border-radius: 1rem;
     display: flex;
