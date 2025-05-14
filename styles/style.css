@@ -39,7 +39,7 @@ img {
 
     }
 
-    .Bento-grid .item {
+    .item {
         max-width: 1440px;
         margin: 2rem;
         display: grid;
@@ -200,7 +200,7 @@ span {
 .item8 {
     display: flex;
     grid-area: item8;
-    font-family: var(--DM-SANS);
+    font-family: var(--DM-SANS-400);
     background-color: var(--Purple-500);
     border-radius: .5rem;
     padding: 2rem;
@@ -208,7 +208,8 @@ span {
 
 .item8 .quote {
     color: var(--White);
-    padding: 10px;
+    text-align: center;
+    padding-top: 6rem;
 }
 
 
